@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+}
+
+.dashboard-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+}
+
+.dashboard-header nav {
+    margin-top: 10px;
+}
+
+.dashboard-header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dashboard-header nav a.activo,
+.dashboard-header nav a:hover {
+    text-decoration: underline;
+    color: #f1c40f;
+}
+
+.dashboard-content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ventas-tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ventas-tabla th,
+.ventas-tabla td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.ventas-tabla th {
+    background-color: #2980b9;
+    color: white;
+}

@@ -1,0 +1,104 @@
+/* estilos_vendedor.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+    background-color: #0056b3;
+}
+
+.contenedor {
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.formulario button {
+    margin-top: 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    background-color: #ffcdd2;
+    color: #b71c1c;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #f44336;
+    border-radius: 4px;
+}

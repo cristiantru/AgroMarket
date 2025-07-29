@@ -1,0 +1,162 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('https://images.pexels.com/photos/9374399/pexels-photo-9374399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.izquierda {
+    flex: 1 1 300px;
+    background: #2e8b57;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.izquierda h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.izquierda p {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.izquierda button {
+    padding: 12px 24px;
+    background: white;
+    color: #2e8b57;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.izquierda button:hover {
+    background: #f0f0f0;
+}
+
+.derecha {
+    flex: 1 1 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.derecha h2 {
+    margin-bottom: 20px;
+    color: #2e8b57;
+}
+
+.derecha form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs y selects */
+.derecha input,
+.derecha select {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.derecha input:focus,
+.derecha select:focus {
+    border-color: #2e8b57;
+    outline: none;
+}
+
+.derecha button {
+    padding: 12px;
+    background: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.derecha button:hover {
+    background: #256d48;
+}
+
+.derecha label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #2e8b57;
+    font-size: 1em;
+}
+
+.derecha a {
+    text-align: right;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #2e8b57;
+    text-decoration: none;
+}
+
+.derecha a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .izquierda,
+    .derecha {
+        padding: 30px;
+    }
+
+    .izquierda button {
+        width: 100%;
+    }
+}
