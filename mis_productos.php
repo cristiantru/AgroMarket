@@ -21,6 +21,7 @@ $result = $stmt->get_result();
     <title>Mis Productos - Agromarket</title>
     <link rel="stylesheet" href="style/footer.css" />
     <link rel="stylesheet" href="style/vendedor.css" />
+    <link rel="stylesheet" href="style/productos.css">
 </head>
 <body>
 
@@ -38,29 +39,22 @@ $result = $stmt->get_result();
     </div>
 </header>
 
-<main>
-    <h2>Mis Productos</h2>
-    <a href="agregar_producto.php" class="btn">Agregar Producto</a>
-
+<main class="contenedor">
+    
     <?php if ($result->num_rows > 0): ?>
-    <table>
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Descripción</th>
-                <th>Precio ($)</th>
-            </tr>
-        </thead>
-        <tbody>
+        <div class="cards-container">
         <?php while($row = $result->fetch_assoc()): ?>
-            <tr>
-                <td><?= htmlspecialchars($row['nombre']) ?></td>
-                <td><?= htmlspecialchars($row['descripcion']) ?></td>
-                <td><?= number_format($row['precio'], 2) ?></td>
-            </tr>
+            <div class="card">
+                <h3><?= htmlspecialchars($row['nombre']) ?></h3>
+                <p><?= htmlspecialchars($row['descripcion']) ?></p>
+                <p class="price">$<?= number_format($row['precio'], 2) ?></p>
+                <div class="card-buttons">
+                    <a href="editar_producto.php?id=<?= $row['id'] ?>" class="btn-edit">Editar</a>
+                    <a href="eliminar_producto.php?id=<?= $row['id'] ?>" class="btn-delete" onclick="return confirm('¿Estás seguro de eliminar este producto?')">Eliminar</a>
+                </div>
+            </div>
         <?php endwhile; ?>
-        </tbody>
-    </table>
+        </div>
     <?php else: ?>
         <p class="no-products">No tienes productos agregados aún.</p>
     <?php endif; ?>

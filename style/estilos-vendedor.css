@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #2e8b57;
     color: white;
     padding: 1rem 2rem;
     display: flex;
@@ -42,7 +42,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.activo {
-    background-color: #0056b3;
+    background-color: #6bcf72;
 }
 
 .contenedor {
@@ -57,7 +57,7 @@ nav ul li a.activo {
 .formulario h2 {
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
-    color: #007bff;
+    color: #040404;
 }
 
 .formulario label {
@@ -80,7 +80,7 @@ nav ul li a.activo {
 
 .formulario button {
     margin-top: 1.5rem;
-    background-color: #007bff;
+    background-color: #4dbb63;
     color: white;
     border: none;
     padding: 0.75rem 2rem;
@@ -91,7 +91,7 @@ nav ul li a.activo {
 }
 
 .formulario button:hover {
-    background-color: #0056b3;
+    background-color: #399b48;
 }
 
 .error {

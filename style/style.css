@@ -160,3 +160,29 @@ body {
         width: 100%;
     }
 }
+.derecha {
+    position: relative; /* necesario para que la posición absoluta funcione dentro */
+    padding: 80px;
+}
+
+.logo-esquina {
+    position: absolute;
+    top: 5px;    /* distancia desde arriba */
+    right: 10px;  /* lo manda a la esquina superior derecha */
+    width: 100px;  /* ajusta tamaño */
+    height: auto; /* mantiene proporciones */
+}
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
