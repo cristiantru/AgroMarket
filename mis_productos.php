@@ -30,14 +30,16 @@ $result = $stmt->get_result();
         <h1 class="logo">Agromarket</h1>
         <nav>
             <ul class="nav-menu">
+                <li><a href="dashboard.php">Panel</a></li>
                 <li><a href="mis_productos.php" class="activo">Mis Productos</a></li>
                 <li><a href="agregar_producto.php">Agregar Producto</a></li>
                 <li><a href="ventas.php">Ventas</a></li>
-                <li><a href="logout.php">Cerrar sesión</a></li>
             </ul>
         </nav>
+        <a href="logout.php" class="logout-header">Cerrar sesión</a>
     </div>
 </header>
+
 
 <main class="contenedor">
     

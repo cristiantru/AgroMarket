@@ -38,16 +38,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <header>
-        <h1>Panel del Vendedor</h1>
+    <div class="container-header">
+        <h1 class="logo">Agromarket</h1>
         <nav>
-            <ul>
+            <ul class="nav-menu">
+                
+                <li><a href="dashboard.php">Panel</a></li>
                 <li><a href="mis_productos.php">Mis Productos</a></li>
                 <li><a href="agregar_producto.php" class="activo">Agregar Producto</a></li>
                 <li><a href="ventas.php">Ventas</a></li>
-                <li><a href="logout.php">Cerrar Sesión</a></li>
             </ul>
         </nav>
-    </header>
+        <a href="logout.php" class="logout-header">Cerrar sesión</a>
+    </div>
+</header>
+
 
     <main class="contenedor">
         <section class="formulario">
